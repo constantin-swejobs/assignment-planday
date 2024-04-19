@@ -2,7 +2,7 @@
 
 (Constantin Panaitescu)
 
-[__Demo link__](https://constantin-swejobs.github.io/assignment-planday/)
+[**Demo link**](https://constantin-swejobs.github.io/assignment-planday/)
 
 ![Demo Screen Capture](screenshots/screen-capture.gif)
 
@@ -36,10 +36,10 @@ or
 
 **Areas of interest:**
 
-| Location                                                     | Notes                                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| **`src/ui/pagination-controls/PaginationControls.test.tsx`** | UI component (unit tests example)                                                 |
-| **`src/views/**tests**/DataItemsGridView.test.tsx`**         | Integration tests example (interactions between UI components, state rules & API) |
+| Location                                                                                                               | Notes                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [**`src/ui/pagination-controls/PaginationControls.test.tsx`**](src/ui/pagination-controls/PaginationControls.test.tsx) | UI component (unit tests example)                                                 |
+| [**`src/views/__tests__/DataItemsGridView.test.tsx`**](src/views/__tests__/DataItemsGridView.test.tsx)                 | Integration tests example (interactions between UI components, state rules & API) |
 
 ### Formatting
 
