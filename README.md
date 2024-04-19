@@ -2,9 +2,9 @@
 
 (Constantin Panaitescu)
 
-[Demo link](https://constantin-swejobs.github.io/assignment-planday/)
+[__Demo link__](https://constantin-swejobs.github.io/assignment-planday/)
 
-![Demo Screen Capture](TODO: screenshots/screen-capture.gif)
+![Demo Screen Capture](screenshots/screen-capture.gif)
 
 ## Installation
 
@@ -38,8 +38,8 @@ or
 
 | Location                                                     | Notes                                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| **`src/ui/pagination-controls/PaginationControls.test.tsx`** | UI component (unit tests)                                                 |
-| **`src/views/**tests**/DataItemsGridView.test.tsx`**         | Integration tests (interactions between UI components, state rules & API) |
+| **`src/ui/pagination-controls/PaginationControls.test.tsx`** | UI component (unit tests example)                                                 |
+| **`src/views/**tests**/DataItemsGridView.test.tsx`**         | Integration tests example (interactions between UI components, state rules & API) |
 
 ### Formatting
 
