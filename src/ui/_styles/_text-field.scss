@@ -1,0 +1,36 @@
+// TextField Component Style Defs
+
+.text-field {
+  input {
+    width: 100%;
+    padding: 14px 20px;
+    line-height: 20px;
+    font-size: 20px;
+    color: $color-gray-dark;
+
+    &::placeholder {
+      color: $color-gray;
+    }
+
+    border-radius: 8px;
+    border: none;
+    box-shadow:
+      0 0 1px rgba($color-black, 0.1),
+      0px 1px 0px rgba($color-black, 0.05),
+      0px 1px 2px rgba($color-black, 0.05),
+      0px 5px 15px rgba($color-black, 0.05);
+
+    transition:
+      box-shadow 0.25s ease,
+      color 0.25s ease;
+
+    &:focus {
+      outline: 2px solid rgba($color-primary, 0.5);
+      box-shadow:
+        0 0 1px rgba($color-black, 0.1),
+        0px 1px 0px rgba($color-black, 0.05),
+        0px 0px 8px rgba($color-black, 0.05),
+        0px 8px 25px rgba($color-black, 0.08);
+    }
+  }
+}

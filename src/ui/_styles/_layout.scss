@@ -1,0 +1,56 @@
+// Layout Components Style Defs
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $size-layout-spacing;
+  padding-right: $size-layout-spacing;
+
+  @include media-breakpoint-up($size-breakpoint-lg) {
+    max-width: $size-breakpoint-lg - $size-layout-spacing * 2;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex: none;
+  margin-left: -$size-layout-spacing;
+  margin-right: -$size-layout-spacing;
+}
+
+.column {
+  flex: none;
+  padding-left: $size-layout-spacing;
+  padding-right: $size-layout-spacing;
+
+  &.centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @for $i from 1 through $size-layout-max-columns {
+    &.column-#{$i} {
+      width: percentage(math.div($i, $size-layout-max-columns));
+    }
+  }
+
+  // Column defs for MD size (MD breakpoint and up)
+  @include media-breakpoint-up($size-breakpoint-md) {
+    @for $i from 1 through $size-layout-max-columns {
+      &.column-md-#{$i} {
+        width: percentage(math.div($i, $size-layout-max-columns));
+      }
+    }
+  }
+
+  // Column defs for LG size (MD breakpoint and up)
+  @include media-breakpoint-up($size-breakpoint-lg) {
+    @for $i from 1 through $size-layout-max-columns {
+      &.column-lg-#{$i} {
+        width: percentage(math.div($i, $size-layout-max-columns));
+      }
+    }
+  }
+}

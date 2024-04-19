@@ -1,0 +1,26 @@
+// Custom styles applied only to the DataItemsGridView partial view
+
+.data-items-grid-view {
+  margin-top: 16px;
+
+  .data-items-grid-view-header,
+  .data-items-grid-view-filter,
+  .data-items-grid-view-footer {
+    margin-bottom: 28px;
+  }
+
+  .data-items-grid-view-header {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .data-items-grid-view-footer {
+    padding-bottom: 16px;
+  }
+
+  .card {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

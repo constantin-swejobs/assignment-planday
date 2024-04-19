@@ -1,0 +1,117 @@
+// PaginationControls Component Style Defs
+
+.pagination-controls {
+  justify-content: space-between;
+  font-size: 16px;
+  color: $color-gray;
+
+  &,
+  .pagination-controls-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .page-selector,
+    .page-controls {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .page-controls {
+    display: flex;
+    gap: 8px;
+  }
+
+  // Column defs for MD size (MD breakpoint and up)
+  @include media-breakpoint-up($size-breakpoint-md) {
+    &,
+    .pagination-controls-section {
+      flex-direction: row;
+
+      .page-controls {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  select,
+  button {
+    font-size: 16px;
+    color: $color-primary;
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    padding: 4px;
+
+    &:focus {
+      outline: 2px solid rgba($color-primary, 0.5);
+    }
+  }
+
+  .page-selector {
+    color: $color-gray-dark;
+
+    select {
+      appearance: none;
+      margin-left: 4px;
+
+      &:disabled {
+        color: $color-gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &.disabled .page-selector {
+    color: $color-gray;
+  }
+
+  .page-controls {
+    button {
+      position: relative;
+
+      &.page-controls-previous::before,
+      &.page-controls-next::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        border-color: $color-primary;
+      }
+
+      &:disabled {
+        color: $color-gray;
+        cursor: not-allowed;
+
+        &::before,
+        &::after {
+          border-color: $color-gray;
+        }
+      }
+
+      &.page-controls-previous {
+        padding-left: 16px;
+
+        &::before {
+          left: 4px;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+
+      &.page-controls-next {
+        padding-right: 16px;
+
+        &::after {
+          right: 4px;
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+  }
+}
